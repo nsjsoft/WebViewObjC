@@ -15,6 +15,7 @@
 		DC493F5327ED953C001CED0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC493F5127ED953C001CED0E /* LaunchScreen.storyboard */; };
 		DC493F5627ED953C001CED0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC493F5527ED953C001CED0E /* main.m */; };
 		DC493F5D27ED962C001CED0E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DC493F5C27ED962C001CED0E /* Reachability.m */; };
+		DC493F6027F15106001CED0E /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = DC493F5F27F15106001CED0E /* test.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		DC493F5527ED953C001CED0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC493F5C27ED962C001CED0E /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		DC493F5E27ED9644001CED0E /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		DC493F5F27F15106001CED0E /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = test.html; path = "../../../NSJ/일반소스/webview/test.html"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				DC493F5127ED953C001CED0E /* LaunchScreen.storyboard */,
 				DC493F5427ED953C001CED0E /* Info.plist */,
 				DC493F5527ED953C001CED0E /* main.m */,
+				DC493F5F27F15106001CED0E /* test.html */,
 			);
 			path = WebViewObjC;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC493F6027F15106001CED0E /* test.html in Resources */,
 				DC493F5327ED953C001CED0E /* LaunchScreen.storyboard in Resources */,
 				DC493F5027ED953C001CED0E /* Assets.xcassets in Resources */,
 				DC493F4E27ED953B001CED0E /* Main.storyboard in Resources */,
