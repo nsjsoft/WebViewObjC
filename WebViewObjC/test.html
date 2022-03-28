@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+    <div class="container-fluid">
+        <h1>webViewTest</h1>
+        
+        
+        <!-- js 에서 네이티브 함수 호출 -->
+        
+        <button type="button" onclick="myFunction()" class="btn btn-outline-danger">JS=>IOS - 1 호출</button>
+        <button type="button" onclick="callNativeFunctionTwo()" class="btn btn-outline-warning">JS=>IOS - 2 호출</button>
+
+        
+        <!-- 인터렉티브 창 함수 호출 (JS => 네이티브)-->
+        <button type="button" onclick="showAlert()" class="btn btn-outline-primary">showAlert</button>
+        <button type="button" onclick="showPrompt()" class="btn btn-outline-secondary">showPrompt</button>
+        <button type="button" onclick="showConfirm()" class="btn btn-outline-success">showConfirm</button>
+    </div>
+    
+    
+<script>
+        
+//네이티브 함수1
+function myFunction() {
+         
+         console.log("myFunction");
+         
+         var data = "JS=>IOS - 1";
+         window.webkit.messageHandlers.hello.postMessage(data);
+}
+
+//네이티브 함수2
+function callNativeFunctionTwo() {
+    
+        console.log("callNativeFunctionTwo");
+        
+        var data = "JS=>IOS - 2";
+        window.webkit.messageHandlers.test.postMessage(data);
+}
+
+
+//네이티브 함수 3
+function callNativeFunctionThree() {
+        
+    console.log("callNativeFunction Three");
+        
+    var data = "JS=>IOS - 3";
+    window.webkit.messageHandlers.test.postMessage(data);
+}
+
+
+
+//alert 함수
+function showAlert() {
+    
+    alert("showAlert");
+
+}
+
+//프롬프트창  함수
+function showPrompt() {
+    
+    var userInput = prompt("What u r name"+"?");
+    alert(userInput+" hi~");
+    
+}
+
+//콘펌창 함수
+function showConfirm() {
+    
+    var result = confirm("can you?");
+    
+    if(result){
+        alert("yes~!");
+    }else{
+        alert("oh~ no~");
+    }
+    
+}
+
+
+
+//IOS 네이티브 => JS 호출 함수 - 1
+function myJsFunction() {
+    
+    return "good job!";
+}
+
+//IOS 네이티브 => JS 호출 함수 - 2
+function myJsFunctionParam(paramA, paramB) {
+        
+    var result = paramA + " : " + paramB ;
+    return result;
+}
+
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+</script>
+    
+  </body>
+</html>
+
+
